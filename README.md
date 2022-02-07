@@ -1,3 +1,17 @@
+# Docker Jenkins
+
+Docker jenkins support
+
+* jenkins:2.333
+* java:jdk11
+
+## How to use?
+
+```bash
+mkdir -p data/jenkins
+
+## docker-compose.yml
+
 version: '3.7'
 
 services:
@@ -19,3 +33,7 @@ services:
 networks:
   app:
     driver: bridge
+
+docker-compose up -d
+
+```
